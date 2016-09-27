@@ -7,13 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A23BC1D927F35A3FBCF0EF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BD4DA92A19923BAE57B538 /* libPods.a */; };
 		AA9617851D94C91B0086DCA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617841D94C91B0086DCA3 /* main.m */; };
 		AA9617881D94C91B0086DCA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617871D94C91B0086DCA3 /* AppDelegate.m */; };
 		AA96178A1D94C91B0086DCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9617891D94C91B0086DCA3 /* Assets.xcassets */; };
 		AA96178D1D94C91B0086DCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA96178B1D94C91B0086DCA3 /* LaunchScreen.storyboard */; };
+		AA9617971D94CB050086DCA3 /* AMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617961D94CB050086DCA3 /* AMSettingsViewController.m */; };
+		AA96179E1D94CBF30086DCA3 /* AMSettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96179D1D94CBF30086DCA3 /* AMSettingsViewModel.m */; };
+		AA9617A11D94CD900086DCA3 /* DemoSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617A01D94CD900086DCA3 /* DemoSettingsViewController.m */; };
+		AA9617A41D94CDC00086DCA3 /* DemoSettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617A31D94CDC00086DCA3 /* DemoSettingsViewModel.m */; };
+		AA9617A71D94D0900086DCA3 /* AMSettingsElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617A61D94D0900086DCA3 /* AMSettingsElement.m */; };
+		AA9617AA1D94D0E60086DCA3 /* AMSettingsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617A91D94D0E60086DCA3 /* AMSettingsSection.m */; };
+		AA9617AD1D94D2330086DCA3 /* AMSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617AC1D94D2330086DCA3 /* AMSettingsCell.m */; };
+		AA9617B41D94D3C40086DCA3 /* icon_progress_failed.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B11D94D3C40086DCA3 /* icon_progress_failed.png */; };
+		AA9617B51D94D3C40086DCA3 /* icon_progress_failed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B21D94D3C40086DCA3 /* icon_progress_failed@2x.png */; };
+		AA9617B61D94D3C40086DCA3 /* icon_progress_failed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B31D94D3C40086DCA3 /* icon_progress_failed@3x.png */; };
+		AA9617BA1D94D3CB0086DCA3 /* icon_progress_successed.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B71D94D3CB0086DCA3 /* icon_progress_successed.png */; };
+		AA9617BB1D94D3CB0086DCA3 /* icon_progress_successed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B81D94D3CB0086DCA3 /* icon_progress_successed@2x.png */; };
+		AA9617BC1D94D3CB0086DCA3 /* icon_progress_successed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9617B91D94D3CB0086DCA3 /* icon_progress_successed@3x.png */; };
+		AA9617BF1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617BE1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m */; };
+		AA9617C21D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617C11D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m */; };
+		AA9617C51D94D8820086DCA3 /* AMSettingsTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617C41D94D8820086DCA3 /* AMSettingsTextElement.m */; };
+		AA9617CA1D94F2D90086DCA3 /* AMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617C91D94F2D90086DCA3 /* AMNavigationController.m */; };
+		AA9617CE1D94FA880086DCA3 /* AMAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617CD1D94FA880086DCA3 /* AMAppearance.m */; };
+		AA9617D11D94FBAA0086DCA3 /* AMSettingsElement+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617D01D94FBAA0086DCA3 /* AMSettingsElement+Appearance.m */; };
+		AA9C4C931D951DA40049180E /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C4C921D951DA40049180E /* UIColor+Util.m */; };
+		AA9C4C961D951F8C0049180E /* AMSettingsTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C4C951D951F8C0049180E /* AMSettingsTextCell.m */; };
+		AA9C4C991D9528FD0049180E /* AMSettingsEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C4C981D9528FD0049180E /* AMSettingsEditViewController.m */; };
+		AA9C4C9D1D952A540049180E /* Clear.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9C4C9A1D952A540049180E /* Clear.png */; };
+		AA9C4C9E1D952A540049180E /* Clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9C4C9B1D952A540049180E /* Clear@2x.png */; };
+		AA9C4C9F1D952A540049180E /* Clear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9C4C9C1D952A540049180E /* Clear@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42BD4DA92A19923BAE57B538 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AF2E290A52B9537A93F733 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9617801D94C91B0086DCA3 /* AmazingSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9617841D94C91B0086DCA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA9617861D94C91B0086DCA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -21,6 +49,50 @@
 		AA9617891D94C91B0086DCA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA96178C1D94C91B0086DCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA96178E1D94C91B0086DCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9617951D94CB050086DCA3 /* AMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsViewController.h; sourceTree = "<group>"; };
+		AA9617961D94CB050086DCA3 /* AMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsViewController.m; sourceTree = "<group>"; };
+		AA96179C1D94CBF30086DCA3 /* AMSettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsViewModel.h; sourceTree = "<group>"; };
+		AA96179D1D94CBF30086DCA3 /* AMSettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsViewModel.m; sourceTree = "<group>"; };
+		AA96179F1D94CD900086DCA3 /* DemoSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSettingsViewController.h; sourceTree = "<group>"; };
+		AA9617A01D94CD900086DCA3 /* DemoSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSettingsViewController.m; sourceTree = "<group>"; };
+		AA9617A21D94CDC00086DCA3 /* DemoSettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSettingsViewModel.h; sourceTree = "<group>"; };
+		AA9617A31D94CDC00086DCA3 /* DemoSettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSettingsViewModel.m; sourceTree = "<group>"; };
+		AA9617A51D94D0900086DCA3 /* AMSettingsElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsElement.h; sourceTree = "<group>"; };
+		AA9617A61D94D0900086DCA3 /* AMSettingsElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsElement.m; sourceTree = "<group>"; };
+		AA9617A81D94D0E60086DCA3 /* AMSettingsSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsSection.h; sourceTree = "<group>"; };
+		AA9617A91D94D0E60086DCA3 /* AMSettingsSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsSection.m; sourceTree = "<group>"; };
+		AA9617AB1D94D2330086DCA3 /* AMSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsCell.h; sourceTree = "<group>"; };
+		AA9617AC1D94D2330086DCA3 /* AMSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsCell.m; sourceTree = "<group>"; };
+		AA9617B11D94D3C40086DCA3 /* icon_progress_failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_progress_failed.png; sourceTree = "<group>"; };
+		AA9617B21D94D3C40086DCA3 /* icon_progress_failed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress_failed@2x.png"; sourceTree = "<group>"; };
+		AA9617B31D94D3C40086DCA3 /* icon_progress_failed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress_failed@3x.png"; sourceTree = "<group>"; };
+		AA9617B71D94D3CB0086DCA3 /* icon_progress_successed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_progress_successed.png; sourceTree = "<group>"; };
+		AA9617B81D94D3CB0086DCA3 /* icon_progress_successed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress_successed@2x.png"; sourceTree = "<group>"; };
+		AA9617B91D94D3CB0086DCA3 /* icon_progress_successed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress_successed@3x.png"; sourceTree = "<group>"; };
+		AA9617BD1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMSettingsElement+RACCommandSupport.h"; sourceTree = "<group>"; };
+		AA9617BE1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMSettingsElement+RACCommandSupport.m"; sourceTree = "<group>"; };
+		AA9617C01D94D4E60086DCA3 /* RACCommand+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+MBProgressHUD.h"; sourceTree = "<group>"; };
+		AA9617C11D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+MBProgressHUD.m"; sourceTree = "<group>"; };
+		AA9617C31D94D8820086DCA3 /* AMSettingsTextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsTextElement.h; sourceTree = "<group>"; };
+		AA9617C41D94D8820086DCA3 /* AMSettingsTextElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsTextElement.m; sourceTree = "<group>"; };
+		AA9617C61D94D8DB0086DCA3 /* AMSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettings.h; sourceTree = "<group>"; };
+		AA9617C71D94D9670086DCA3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = AmazingSettings/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		AA9617C81D94F2D90086DCA3 /* AMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNavigationController.h; sourceTree = "<group>"; };
+		AA9617C91D94F2D90086DCA3 /* AMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavigationController.m; sourceTree = "<group>"; };
+		AA9617CC1D94FA880086DCA3 /* AMAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppearance.h; sourceTree = "<group>"; };
+		AA9617CD1D94FA880086DCA3 /* AMAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppearance.m; sourceTree = "<group>"; };
+		AA9617CF1D94FBAA0086DCA3 /* AMSettingsElement+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMSettingsElement+Appearance.h"; sourceTree = "<group>"; };
+		AA9617D01D94FBAA0086DCA3 /* AMSettingsElement+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMSettingsElement+Appearance.m"; sourceTree = "<group>"; };
+		AA9C4C911D951DA40049180E /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		AA9C4C921D951DA40049180E /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		AA9C4C941D951F8C0049180E /* AMSettingsTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsTextCell.h; sourceTree = "<group>"; };
+		AA9C4C951D951F8C0049180E /* AMSettingsTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsTextCell.m; sourceTree = "<group>"; };
+		AA9C4C971D9528FD0049180E /* AMSettingsEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsEditViewController.h; sourceTree = "<group>"; };
+		AA9C4C981D9528FD0049180E /* AMSettingsEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsEditViewController.m; sourceTree = "<group>"; };
+		AA9C4C9A1D952A540049180E /* Clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clear.png; sourceTree = "<group>"; };
+		AA9C4C9B1D952A540049180E /* Clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clear@2x.png"; sourceTree = "<group>"; };
+		AA9C4C9C1D952A540049180E /* Clear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clear@3x.png"; sourceTree = "<group>"; };
+		F96A8C4A8CF2431B1889B1EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,16 +100,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A23BC1D927F35A3FBCF0EF2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3008631350041FC2406E5FA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42BD4DA92A19923BAE57B538 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA9617771D94C91B0086DCA3 = {
 			isa = PBXGroup;
 			children = (
 				AA9617821D94C91B0086DCA3 /* AmazingSettings */,
+				AA9617941D94C9240086DCA3 /* Class */,
+				3008631350041FC2406E5FA5 /* Frameworks */,
+				E0FD5F04D4D52A149DC2B9B9 /* Pods */,
 				AA9617811D94C91B0086DCA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +137,17 @@
 		AA9617821D94C91B0086DCA3 /* AmazingSettings */ = {
 			isa = PBXGroup;
 			children = (
+				AA9C4C901D951D960049180E /* Category */,
+				AA9617831D94C91B0086DCA3 /* Supporting Files */,
 				AA9617861D94C91B0086DCA3 /* AppDelegate.h */,
 				AA9617871D94C91B0086DCA3 /* AppDelegate.m */,
 				AA9617891D94C91B0086DCA3 /* Assets.xcassets */,
-				AA96178B1D94C91B0086DCA3 /* LaunchScreen.storyboard */,
+				AA96179F1D94CD900086DCA3 /* DemoSettingsViewController.h */,
+				AA9617A01D94CD900086DCA3 /* DemoSettingsViewController.m */,
+				AA9617A21D94CDC00086DCA3 /* DemoSettingsViewModel.h */,
+				AA9617A31D94CDC00086DCA3 /* DemoSettingsViewModel.m */,
 				AA96178E1D94C91B0086DCA3 /* Info.plist */,
-				AA9617831D94C91B0086DCA3 /* Supporting Files */,
+				AA96178B1D94C91B0086DCA3 /* LaunchScreen.storyboard */,
 			);
 			path = AmazingSettings;
 			sourceTree = "<group>";
@@ -67,8 +156,134 @@
 			isa = PBXGroup;
 			children = (
 				AA9617841D94C91B0086DCA3 /* main.m */,
+				AA9617C71D94D9670086DCA3 /* PrefixHeader.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA9617941D94C9240086DCA3 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617CB1D94FA670086DCA3 /* Appearance */,
+				AA9617AE1D94D3620086DCA3 /* Category */,
+				AA9617981D94CB960086DCA3 /* Controller */,
+				AA96179B1D94CBB00086DCA3 /* Model */,
+				AA9617AF1D94D3740086DCA3 /* Resource */,
+				AA9617991D94CBA30086DCA3 /* ViewModel */,
+				AA96179A1D94CBA90086DCA3 /* Views */,
+				AA9617C61D94D8DB0086DCA3 /* AMSettings.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		AA9617981D94CB960086DCA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617951D94CB050086DCA3 /* AMSettingsViewController.h */,
+				AA9617961D94CB050086DCA3 /* AMSettingsViewController.m */,
+				AA9617C81D94F2D90086DCA3 /* AMNavigationController.h */,
+				AA9617C91D94F2D90086DCA3 /* AMNavigationController.m */,
+				AA9C4C971D9528FD0049180E /* AMSettingsEditViewController.h */,
+				AA9C4C981D9528FD0049180E /* AMSettingsEditViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA9617991D94CBA30086DCA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA96179C1D94CBF30086DCA3 /* AMSettingsViewModel.h */,
+				AA96179D1D94CBF30086DCA3 /* AMSettingsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA96179A1D94CBA90086DCA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617AB1D94D2330086DCA3 /* AMSettingsCell.h */,
+				AA9617AC1D94D2330086DCA3 /* AMSettingsCell.m */,
+				AA9C4C941D951F8C0049180E /* AMSettingsTextCell.h */,
+				AA9C4C951D951F8C0049180E /* AMSettingsTextCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA96179B1D94CBB00086DCA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617A51D94D0900086DCA3 /* AMSettingsElement.h */,
+				AA9617A61D94D0900086DCA3 /* AMSettingsElement.m */,
+				AA9617A81D94D0E60086DCA3 /* AMSettingsSection.h */,
+				AA9617A91D94D0E60086DCA3 /* AMSettingsSection.m */,
+				AA9617C31D94D8820086DCA3 /* AMSettingsTextElement.h */,
+				AA9617C41D94D8820086DCA3 /* AMSettingsTextElement.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA9617AE1D94D3620086DCA3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617BD1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.h */,
+				AA9617BE1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m */,
+				AA9617C01D94D4E60086DCA3 /* RACCommand+MBProgressHUD.h */,
+				AA9617C11D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m */,
+				AA9617CF1D94FBAA0086DCA3 /* AMSettingsElement+Appearance.h */,
+				AA9617D01D94FBAA0086DCA3 /* AMSettingsElement+Appearance.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AA9617AF1D94D3740086DCA3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617B01D94D37C0086DCA3 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AA9617B01D94D37C0086DCA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AA9C4C9A1D952A540049180E /* Clear.png */,
+				AA9C4C9B1D952A540049180E /* Clear@2x.png */,
+				AA9C4C9C1D952A540049180E /* Clear@3x.png */,
+				AA9617B11D94D3C40086DCA3 /* icon_progress_failed.png */,
+				AA9617B21D94D3C40086DCA3 /* icon_progress_failed@2x.png */,
+				AA9617B31D94D3C40086DCA3 /* icon_progress_failed@3x.png */,
+				AA9617B71D94D3CB0086DCA3 /* icon_progress_successed.png */,
+				AA9617B81D94D3CB0086DCA3 /* icon_progress_successed@2x.png */,
+				AA9617B91D94D3CB0086DCA3 /* icon_progress_successed@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AA9617CB1D94FA670086DCA3 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				AA9617CC1D94FA880086DCA3 /* AMAppearance.h */,
+				AA9617CD1D94FA880086DCA3 /* AMAppearance.m */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
+		AA9C4C901D951D960049180E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AA9C4C911D951DA40049180E /* UIColor+Util.h */,
+				AA9C4C921D951DA40049180E /* UIColor+Util.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E0FD5F04D4D52A149DC2B9B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9AF2E290A52B9537A93F733 /* Pods.debug.xcconfig */,
+				F96A8C4A8CF2431B1889B1EE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA9617911D94C91B0086DCA3 /* Build configuration list for PBXNativeTarget "AmazingSettings" */;
 			buildPhases = (
+				F3486C6C00C0AFA524DFB0E2 /* Check Pods Manifest.lock */,
 				AA96177C1D94C91B0086DCA3 /* Sources */,
 				AA96177D1D94C91B0086DCA3 /* Frameworks */,
 				AA96177E1D94C91B0086DCA3 /* Resources */,
+				2EC5C6C3F6DEFDA325203D44 /* Embed Pods Frameworks */,
+				2A7B21FE2F0F53AD91813373 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,20 +346,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9C4C9E1D952A540049180E /* Clear@2x.png in Resources */,
+				AA9617BB1D94D3CB0086DCA3 /* icon_progress_successed@2x.png in Resources */,
 				AA96178A1D94C91B0086DCA3 /* Assets.xcassets in Resources */,
+				AA9617BC1D94D3CB0086DCA3 /* icon_progress_successed@3x.png in Resources */,
+				AA9617B51D94D3C40086DCA3 /* icon_progress_failed@2x.png in Resources */,
+				AA9617BA1D94D3CB0086DCA3 /* icon_progress_successed.png in Resources */,
 				AA96178D1D94C91B0086DCA3 /* LaunchScreen.storyboard in Resources */,
+				AA9617B61D94D3C40086DCA3 /* icon_progress_failed@3x.png in Resources */,
+				AA9C4C9F1D952A540049180E /* Clear@3x.png in Resources */,
+				AA9C4C9D1D952A540049180E /* Clear.png in Resources */,
+				AA9617B41D94D3C40086DCA3 /* icon_progress_failed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A7B21FE2F0F53AD91813373 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EC5C6C3F6DEFDA325203D44 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3486C6C00C0AFA524DFB0E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA96177C1D94C91B0086DCA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9617A11D94CD900086DCA3 /* DemoSettingsViewController.m in Sources */,
 				AA9617881D94C91B0086DCA3 /* AppDelegate.m in Sources */,
+				AA9617D11D94FBAA0086DCA3 /* AMSettingsElement+Appearance.m in Sources */,
+				AA9617AA1D94D0E60086DCA3 /* AMSettingsSection.m in Sources */,
+				AA9617971D94CB050086DCA3 /* AMSettingsViewController.m in Sources */,
+				AA9617C51D94D8820086DCA3 /* AMSettingsTextElement.m in Sources */,
+				AA9617CE1D94FA880086DCA3 /* AMAppearance.m in Sources */,
+				AA9C4C961D951F8C0049180E /* AMSettingsTextCell.m in Sources */,
+				AA9617AD1D94D2330086DCA3 /* AMSettingsCell.m in Sources */,
+				AA9C4C991D9528FD0049180E /* AMSettingsEditViewController.m in Sources */,
+				AA9617A71D94D0900086DCA3 /* AMSettingsElement.m in Sources */,
 				AA9617851D94C91B0086DCA3 /* main.m in Sources */,
+				AA9617C21D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m in Sources */,
+				AA9617BF1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m in Sources */,
+				AA9617CA1D94F2D90086DCA3 /* AMNavigationController.m in Sources */,
+				AA9617A41D94CDC00086DCA3 /* DemoSettingsViewModel.m in Sources */,
+				AA96179E1D94CBF30086DCA3 /* AMSettingsViewModel.m in Sources */,
+				AA9C4C931D951DA40049180E /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +445,7 @@
 				AA96178C1D94C91B0086DCA3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -243,9 +535,15 @@
 		};
 		AA9617921D94C91B0086DCA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AF2E290A52B9537A93F733 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AmazingSettings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FutureDial.AmazingSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -254,9 +552,15 @@
 		};
 		AA9617931D94C91B0086DCA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96A8C4A8CF2431B1889B1EE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AmazingSettings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FutureDial.AmazingSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +586,7 @@
 				AA9617931D94C91B0086DCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
