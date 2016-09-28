@@ -11,9 +11,11 @@
 #import "AMSettingsSection.h"
 #import "AMSettingsTextElement.h"
 #import "AMSettingsElement+RACCommandSupport.h"
+#import "AMSettingsOptionElement.h"
 
 @interface DemoSettingsViewModel ()
 @property (nonatomic, strong) RACCommand *updateTextFieldCommand;
+@property (nonatomic, strong) RACCommand *updateConstellationCommand;
 @end
 
 @implementation DemoSettingsViewModel
@@ -51,11 +53,42 @@
     motto.rac_command = self.updateTextFieldCommand;
     [section1 addElement:motto];
     
+    
+    
+    // Constellation
+    AMSettingsOptionElement *constellation = [[AMSettingsOptionElement alloc]initWithTitle:@"Constellation"];
+    constellation.indexOfSelected = 1;
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"constellation" ofType:@"plist"]];
+    __block NSInteger index = 0;
+    constellation.options = [array.rac_sequence map:^id(NSString *value) {
+        AMSettingsOptionModel *model = [[AMSettingsOptionModel alloc]initWithTitle:value];
+        if (index == constellation.indexOfSelected) {
+            model.marked = YES;
+        }else{
+            model.marked = NO;
+        }
+        index++;
+        return model;
+    }].array;
+    constellation.rac_command = self.updateConstellationCommand;
+    
+    [section1 addElement:constellation];
+    
     [self addSection:section1];
 }
 
 - (void)initCommand{
     self.updateTextFieldCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
+            });
+            return nil;
+        }];
+    }];
+    
+    self.updateConstellationCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [subscriber sendNext:@YES];

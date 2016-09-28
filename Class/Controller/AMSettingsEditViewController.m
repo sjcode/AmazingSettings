@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.navigationController.navigationBar.backItem.title = @"";
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         tableView.dataSource = self;

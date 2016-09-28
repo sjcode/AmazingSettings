@@ -9,6 +9,7 @@
 #import "AMSettingsTextCell.h"
 #import "AMSettingsElement.h"
 #import "AMSettingsTextElement.h"
+#import "AMSettingsOptionElement.h"
 
 @interface AMSettingsTextCell ()
 @property (nonatomic, strong) UILabel *value;
@@ -71,9 +72,18 @@
     return _value;
 }
 
-- (void)configCell:(AMSettingsTextElement*)item{
+- (void)configCell:(id)item{
     [super configCell:item];
-    self.value.text = item.value;
+    if ([item isKindOfClass:[AMSettingsTextElement class]]) {
+        self.value.text = ((AMSettingsTextElement*)item).value;
+    }else if([item isKindOfClass:[AMSettingsOptionElement class]]){
+        AMSettingsOptionElement *element = (AMSettingsOptionElement*)item;
+        AMSettingsOptionModel *model = element.options[element.indexOfSelected];
+        self.value.text = model.title;
+        
+    }else{
+        
+    }
 }
 @end
 

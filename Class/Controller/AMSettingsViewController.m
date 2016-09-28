@@ -14,6 +14,8 @@
 #import "AMSettingsTextElement.h"
 #import "AMSettingsTextCell.h"
 #import "AMSettingsEditViewController.h"
+#import "AMSettingsOptionElement.h"
+#import "AMSettingsOptionViewController.h"
 
 @interface AMSettingsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -33,7 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.backItem.title = @"";
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         tableView.dataSource = self;
@@ -61,6 +63,10 @@
         AMSettingsTextCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsTextCell" forIndexPath:indexPath];
         [cell configCell:element];
         return cell;
+    }else if([element isKindOfClass:[AMSettingsOptionElement class]]){
+        AMSettingsTextCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsTextCell" forIndexPath:indexPath];
+        [cell configCell:element];
+        return cell;
     }else{
         AMSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsCell" forIndexPath:indexPath];
         return cell;
@@ -83,9 +89,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIViewController *viewController;
     AMSettingsElement *element = [self elementAtIndexPath:indexPath];
-    AMSettingsEditViewController *viewController = [[AMSettingsEditViewController alloc]init];
-    viewController.element = (AMSettingsTextElement*)element;
+    if ([element isKindOfClass:[AMSettingsTextElement class]]) {
+        AMSettingsEditViewController *editViewController = [[AMSettingsEditViewController alloc]init];
+        editViewController.element = (AMSettingsTextElement*)element;
+        viewController = editViewController;
+    }else if([element isKindOfClass:[AMSettingsOptionElement class]]){
+        AMSettingsOptionViewController *optionViewController = [[AMSettingsOptionViewController alloc]init];
+        optionViewController.elements = (AMSettingsOptionElement*)element;
+        viewController = optionViewController;
+    }
     
     [self.navigationController pushViewController:viewController animated:YES];
 }

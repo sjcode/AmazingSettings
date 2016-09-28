@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4A23BC1D927F35A3FBCF0EF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BD4DA92A19923BAE57B538 /* libPods.a */; };
+		AA27DAC61D9BF7930087C9E8 /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA27DAC51D9BF7930087C9E8 /* constellation.plist */; };
+		AA27DAC91D9BFB760087C9E8 /* AMSettingsOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA27DAC81D9BFB760087C9E8 /* AMSettingsOptionViewController.m */; };
+		AA27DACC1D9BFCB10087C9E8 /* AMSettingsOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA27DACB1D9BFCB10087C9E8 /* AMSettingsOptionCell.m */; };
+		AA27DAD01D9BFE150087C9E8 /* icon_settings_marked.png in Resources */ = {isa = PBXBuildFile; fileRef = AA27DACD1D9BFE150087C9E8 /* icon_settings_marked.png */; };
+		AA27DAD11D9BFE150087C9E8 /* icon_settings_marked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA27DACE1D9BFE150087C9E8 /* icon_settings_marked@2x.png */; };
+		AA27DAD21D9BFE150087C9E8 /* icon_settings_marked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA27DACF1D9BFE150087C9E8 /* icon_settings_marked@3x.png */; };
+		AA90058F1D9A0C42004B14C2 /* AMSettingsOptionElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AA90058E1D9A0C42004B14C2 /* AMSettingsOptionElement.m */; };
 		AA9617851D94C91B0086DCA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617841D94C91B0086DCA3 /* main.m */; };
 		AA9617881D94C91B0086DCA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9617871D94C91B0086DCA3 /* AppDelegate.m */; };
 		AA96178A1D94C91B0086DCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9617891D94C91B0086DCA3 /* Assets.xcassets */; };
@@ -42,6 +49,16 @@
 /* Begin PBXFileReference section */
 		42BD4DA92A19923BAE57B538 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AF2E290A52B9537A93F733 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA27DAC51D9BF7930087C9E8 /* constellation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = constellation.plist; sourceTree = "<group>"; };
+		AA27DAC71D9BFB760087C9E8 /* AMSettingsOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsOptionViewController.h; sourceTree = "<group>"; };
+		AA27DAC81D9BFB760087C9E8 /* AMSettingsOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsOptionViewController.m; sourceTree = "<group>"; };
+		AA27DACA1D9BFCB10087C9E8 /* AMSettingsOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsOptionCell.h; sourceTree = "<group>"; };
+		AA27DACB1D9BFCB10087C9E8 /* AMSettingsOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsOptionCell.m; sourceTree = "<group>"; };
+		AA27DACD1D9BFE150087C9E8 /* icon_settings_marked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_settings_marked.png; sourceTree = "<group>"; };
+		AA27DACE1D9BFE150087C9E8 /* icon_settings_marked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_settings_marked@2x.png"; sourceTree = "<group>"; };
+		AA27DACF1D9BFE150087C9E8 /* icon_settings_marked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_settings_marked@3x.png"; sourceTree = "<group>"; };
+		AA90058D1D9A0C42004B14C2 /* AMSettingsOptionElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSettingsOptionElement.h; sourceTree = "<group>"; };
+		AA90058E1D9A0C42004B14C2 /* AMSettingsOptionElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSettingsOptionElement.m; sourceTree = "<group>"; };
 		AA9617801D94C91B0086DCA3 /* AmazingSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9617841D94C91B0086DCA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA9617861D94C91B0086DCA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +172,7 @@
 		AA9617831D94C91B0086DCA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA27DAC51D9BF7930087C9E8 /* constellation.plist */,
 				AA9617841D94C91B0086DCA3 /* main.m */,
 				AA9617C71D94D9670086DCA3 /* PrefixHeader.pch */,
 			);
@@ -185,6 +203,8 @@
 				AA9617C91D94F2D90086DCA3 /* AMNavigationController.m */,
 				AA9C4C971D9528FD0049180E /* AMSettingsEditViewController.h */,
 				AA9C4C981D9528FD0049180E /* AMSettingsEditViewController.m */,
+				AA27DAC71D9BFB760087C9E8 /* AMSettingsOptionViewController.h */,
+				AA27DAC81D9BFB760087C9E8 /* AMSettingsOptionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +225,8 @@
 				AA9617AC1D94D2330086DCA3 /* AMSettingsCell.m */,
 				AA9C4C941D951F8C0049180E /* AMSettingsTextCell.h */,
 				AA9C4C951D951F8C0049180E /* AMSettingsTextCell.m */,
+				AA27DACA1D9BFCB10087C9E8 /* AMSettingsOptionCell.h */,
+				AA27DACB1D9BFCB10087C9E8 /* AMSettingsOptionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +240,8 @@
 				AA9617A91D94D0E60086DCA3 /* AMSettingsSection.m */,
 				AA9617C31D94D8820086DCA3 /* AMSettingsTextElement.h */,
 				AA9617C41D94D8820086DCA3 /* AMSettingsTextElement.m */,
+				AA90058D1D9A0C42004B14C2 /* AMSettingsOptionElement.h */,
+				AA90058E1D9A0C42004B14C2 /* AMSettingsOptionElement.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +270,9 @@
 		AA9617B01D94D37C0086DCA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AA27DACD1D9BFE150087C9E8 /* icon_settings_marked.png */,
+				AA27DACE1D9BFE150087C9E8 /* icon_settings_marked@2x.png */,
+				AA27DACF1D9BFE150087C9E8 /* icon_settings_marked@3x.png */,
 				AA9C4C9A1D952A540049180E /* Clear.png */,
 				AA9C4C9B1D952A540049180E /* Clear@2x.png */,
 				AA9C4C9C1D952A540049180E /* Clear@3x.png */,
@@ -350,13 +377,17 @@
 				AA9617BB1D94D3CB0086DCA3 /* icon_progress_successed@2x.png in Resources */,
 				AA96178A1D94C91B0086DCA3 /* Assets.xcassets in Resources */,
 				AA9617BC1D94D3CB0086DCA3 /* icon_progress_successed@3x.png in Resources */,
+				AA27DAC61D9BF7930087C9E8 /* constellation.plist in Resources */,
 				AA9617B51D94D3C40086DCA3 /* icon_progress_failed@2x.png in Resources */,
+				AA27DAD01D9BFE150087C9E8 /* icon_settings_marked.png in Resources */,
 				AA9617BA1D94D3CB0086DCA3 /* icon_progress_successed.png in Resources */,
+				AA27DAD11D9BFE150087C9E8 /* icon_settings_marked@2x.png in Resources */,
 				AA96178D1D94C91B0086DCA3 /* LaunchScreen.storyboard in Resources */,
 				AA9617B61D94D3C40086DCA3 /* icon_progress_failed@3x.png in Resources */,
 				AA9C4C9F1D952A540049180E /* Clear@3x.png in Resources */,
 				AA9C4C9D1D952A540049180E /* Clear.png in Resources */,
 				AA9617B41D94D3C40086DCA3 /* icon_progress_failed.png in Resources */,
+				AA27DAD21D9BFE150087C9E8 /* icon_settings_marked@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +460,12 @@
 				AA9617851D94C91B0086DCA3 /* main.m in Sources */,
 				AA9617C21D94D4E60086DCA3 /* RACCommand+MBProgressHUD.m in Sources */,
 				AA9617BF1D94D3E50086DCA3 /* AMSettingsElement+RACCommandSupport.m in Sources */,
+				AA27DACC1D9BFCB10087C9E8 /* AMSettingsOptionCell.m in Sources */,
 				AA9617CA1D94F2D90086DCA3 /* AMNavigationController.m in Sources */,
 				AA9617A41D94CDC00086DCA3 /* DemoSettingsViewModel.m in Sources */,
+				AA27DAC91D9BFB760087C9E8 /* AMSettingsOptionViewController.m in Sources */,
 				AA96179E1D94CBF30086DCA3 /* AMSettingsViewModel.m in Sources */,
+				AA90058F1D9A0C42004B14C2 /* AMSettingsOptionElement.m in Sources */,
 				AA9C4C931D951DA40049180E /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
