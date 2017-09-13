@@ -16,6 +16,8 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         [self setupUI];
     }
     return self;
@@ -95,6 +97,8 @@
 
 - (void)configCell:(AMSettingsElement*)item{
     self.icon.image = item.icon ?: nil;
+    [self.icon sizeToFit];
     self.title.text = item.title;
+    [self.title sizeToFit];
 }
 @end

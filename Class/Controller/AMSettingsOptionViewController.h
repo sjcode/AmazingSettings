@@ -11,5 +11,5 @@
 @class AMSettingsOptionElement;
 
 @interface AMSettingsOptionViewController : UIViewController
-@property (nonatomic, strong) AMSettingsOptionElement *elements;
+@property (nonatomic, strong) AMSettingsOptionElement *element;
 @end

@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.elements.title;
+    self.title = self.element.title;
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         [tableView registerClass:[AMSettingsOptionCell class] forCellReuseIdentifier:@"AMSettingsOptionCell"];
@@ -32,7 +32,7 @@
     
     [self.view addSubview:self.tableView];
     @weakify(self)
-    [self.elements.rac_command addProgressHUDWithParentView:self.navigationController.view
+    [self.element.rac_command addProgressHUDWithParentView:self.tableView
                                                 processing:@"保存中..."
                                                  successed:@"保存成功"
                                                     failed:@"保存失败"
@@ -56,25 +56,25 @@
 #pragma mark - UITableViewDataSource & UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.elements.options.count;
+    return self.element.options.count;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     AMSettingsOptionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsOptionCell" forIndexPath:indexPath];
-    [cell configCell:self.elements.options[indexPath.row]];
+    [cell configCell:self.element.options[indexPath.row]];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    for (AMSettingsOptionModel *model in self.elements.options) {
+    for (AMSettingsOptionModel *model in self.element.options) {
         model.marked = NO;
     }
-    AMSettingsOptionModel *model = self.elements.options[indexPath.row];
+    AMSettingsOptionModel *model = self.element.options[indexPath.row];
     model.marked = YES;
     [self.tableView reloadData];
-    [self.elements.rac_command execute:indexPath];
+    [self.element.rac_command execute:indexPath];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{

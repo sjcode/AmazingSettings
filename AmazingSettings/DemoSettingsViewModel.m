@@ -12,10 +12,12 @@
 #import "AMSettingsTextElement.h"
 #import "AMSettingsElement+RACCommandSupport.h"
 #import "AMSettingsOptionElement.h"
+#import "AMSettingsImageElement.h"
 
 @interface DemoSettingsViewModel ()
 @property (nonatomic, strong) RACCommand *updateTextFieldCommand;
 @property (nonatomic, strong) RACCommand *updateConstellationCommand;
+@property (nonatomic, strong) RACCommand *updateAvatarCommand;
 @end
 
 @implementation DemoSettingsViewModel
@@ -74,6 +76,12 @@
     
     [section1 addElement:constellation];
     
+    // Image
+    AMSettingsImageElement *avatar = [[AMSettingsImageElement alloc]initWithTitle:@"Avatar"];
+    avatar.imagefile = @"http://www.th7.cn/d/file/p/2016/09/12/a21b1807c3ef1cba781cf10a3d20cafc.jpg";
+    avatar.rac_command = self.updateAvatarCommand;
+    [section1 addElement:avatar];
+    
     [self addSection:section1];
 }
 
@@ -88,9 +96,22 @@
         }];
     }];
     
+
+    
     self.updateConstellationCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
+            });
+            return nil;
+        }];
+    }];
+    
+    self.updateAvatarCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
                 [subscriber sendNext:@YES];
                 [subscriber sendCompleted];
             });

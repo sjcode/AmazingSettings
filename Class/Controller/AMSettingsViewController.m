@@ -16,6 +16,10 @@
 #import "AMSettingsEditViewController.h"
 #import "AMSettingsOptionElement.h"
 #import "AMSettingsOptionViewController.h"
+#import "AMSettingsImageElement.h"
+#import "AMSettingsImageCell.h"
+#import "AMSettingsImageController.h"
+
 
 @interface AMSettingsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -46,6 +50,7 @@
     
     [self.tableView registerClass:[AMSettingsCell class] forCellReuseIdentifier:@"AMSettingsCell"];
     [self.tableView registerClass:[AMSettingsTextCell class] forCellReuseIdentifier:@"AMSettingsTextCell"];
+    [self.tableView registerClass:[AMSettingsImageCell class] forCellReuseIdentifier:@"AMSettingsImageCell"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -67,6 +72,10 @@
         AMSettingsTextCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsTextCell" forIndexPath:indexPath];
         [cell configCell:element];
         return cell;
+    }else if([element isKindOfClass:[AMSettingsImageElement class]]){
+        AMSettingsImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsImageCell" forIndexPath:indexPath];
+        [cell configCell:element];
+        return cell;
     }else{
         AMSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AMSettingsCell" forIndexPath:indexPath];
         return cell;
@@ -79,6 +88,15 @@
     AMSettingsElement *element =  settingsSection.elements[indexPath.row];
     if(element.appearance.cellBackgroundColor){
         cell.contentView.backgroundColor = element.appearance.cellBackgroundColor;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    AMSettingsElement *element = [self elementAtIndexPath:indexPath];
+    if([element isKindOfClass:[AMSettingsImageElement class]]){
+        return 70;
+    }else{
+        return 44;
     }
 }
 
@@ -98,11 +116,16 @@
         viewController = editViewController;
     }else if([element isKindOfClass:[AMSettingsOptionElement class]]){
         AMSettingsOptionViewController *optionViewController = [[AMSettingsOptionViewController alloc]init];
-        optionViewController.elements = (AMSettingsOptionElement*)element;
+        optionViewController.element = (AMSettingsOptionElement*)element;
         viewController = optionViewController;
+    }else if([element isKindOfClass:[AMSettingsImageElement class]]){
+        AMSettingsImageController *imageController = [[AMSettingsImageController alloc]init];
+        imageController.element = (AMSettingsImageElement*)element;
+        viewController = imageController;
     }
-    
-    [self.navigationController pushViewController:viewController animated:YES];
+    if (viewController) {
+        [self.navigationController pushViewController:viewController animated:YES];
+    }   
 }
 
 - (AMSettingsElement*)elementAtIndexPath:(NSIndexPath*)indexPath{
